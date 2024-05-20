@@ -18,6 +18,8 @@ public class ModItemGroups {
                     entries.add(ModItems.BLUBBER);
                     entries.add(ModItems.SHARKTOOTH);
 
+                    entries.add(ModItems.RAWSHARKMEAT);
+
                     entries.add(ModBlocks.CAT_BLOCK);
 
                     }).build());

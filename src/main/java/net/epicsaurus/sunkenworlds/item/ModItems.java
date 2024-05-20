@@ -14,6 +14,8 @@ public class ModItems {
     public static final Item SHARKTOOTH = registerItem("shark_tooth", new Item(new FabricItemSettings()));
     public static final Item BLUBBER = registerItem("blubber", new Item(new FabricItemSettings()));
 
+    public static final Item RAWSHARKMEAT = registerItem("raw_shark_meat", new Item(new FabricItemSettings().food(ModFoodComponents.RAWSHARKMEAT)));
+
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
         entries.add(SHARKTOOTH);
         entries.add(BLUBBER);

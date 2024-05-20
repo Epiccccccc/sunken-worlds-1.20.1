@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "sunkenworlds:blubber"
+    }
+  },
+  "result": {
+    "item": "sunkenworlds:cat_block"
+  }
+}
+

@@ -13,7 +13,7 @@ import net.minecraft.util.Identifier;
 
 public class ModBlocks {
      public static final Block CAT_BLOCK = registerBlock("cat_block",
-             new Block(FabricBlockSettings.copyOf(Blocks.NETHERITE_BLOCK)));
+             new Block(FabricBlockSettings.copyOf(Blocks.COBBLESTONE)));
 
 
     private static Block registerBlock(String name, Block block) {

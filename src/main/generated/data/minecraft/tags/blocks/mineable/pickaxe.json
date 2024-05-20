@@ -1,7 +1,6 @@
 {
   "replace": false,
   "values": [
-    "sunkenworlds:cat_block",
-    "sunkenworlds:cat_block"
+    "sunken_worlds:cat_block"
   ]
 }

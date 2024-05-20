@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "sunkenworlds:block/cat_block"
+  }
+}

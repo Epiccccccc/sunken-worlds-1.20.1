@@ -1,6 +1,7 @@
 package net.epicsaurus.sunkenworlds.item;
 
 import net.epicsaurus.sunkenworlds.SunkenWorlds;
+import net.epicsaurus.sunkenworlds.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -16,6 +17,9 @@ public class ModItemGroups {
                     .icon(() -> new ItemStack(ModItems.SHARKTOOTH)).entries((displayContext, entries) -> {
                     entries.add(ModItems.BLUBBER);
                     entries.add(ModItems.SHARKTOOTH);
+
+                    entries.add(ModBlocks.CAT_BLOCK);
+
                     }).build());
 
     public static void registeritemgroups() {

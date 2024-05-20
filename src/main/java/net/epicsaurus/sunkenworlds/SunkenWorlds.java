@@ -1,5 +1,8 @@
 package net.epicsaurus.sunkenworlds;
 
+import net.epicsaurus.sunkenworlds.block.ModBlocks;
+import net.epicsaurus.sunkenworlds.item.ModItemGroups;
+import net.epicsaurus.sunkenworlds.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,7 +14,9 @@ public class SunkenWorlds implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItemGroups.registeritemgroups();
 
-		LOGGER.info("Hello Fabric world!");
+		ModItems.registerModItems();
+		ModBlocks.RegisterModBlocks();
 	}
 }

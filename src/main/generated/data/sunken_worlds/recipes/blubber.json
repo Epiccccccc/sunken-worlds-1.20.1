@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "sunken_worlds:cat_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "sunken_worlds:blubber"
+  }
+}

@@ -16,7 +16,7 @@ import java.util.List;
 import java.util.function.Consumer;
 
 public class ModRecipeProvider extends FabricRecipeProvider {
-    private static final List<ItemConvertible> FOOD_COOKABLE = List.of(ModItems.RAWSHARKMEAT);
+    private static final List<ItemConvertible> FOOD_COOKABLE = List.of(ModItems.RAW_SHARK_MEAT);
 
     public ModRecipeProvider(FabricDataOutput output) {
         super(output);
@@ -24,22 +24,17 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
     @Override
     public void generate(Consumer<RecipeJsonProvider> exporter) {
-        offerSmelting(exporter, FOOD_COOKABLE, RecipeCategory.FOOD, ModItems.RAWSHARKMEAT,
+        offerSmelting(exporter, FOOD_COOKABLE, RecipeCategory.FOOD, ModItems.RAW_SHARK_MEAT,
                 0.7f, 200, "Meat");
-       // offer(exporter, FOOD_COOKABLE, RecipeCategory.FOOD, ModItems.RAWSHARKMEAT,
-     //           0.7f, 200, "Meat");
 
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.BLUBBER, RecipeCategory.DECORATIONS,
                 ModBlocks.CAT_BLOCK);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.SHARKTOOTH, 1)
-                .pattern("SSS")
-                .pattern("SCS")
-                .pattern("SCS")
-                .input('S',Items.STONE)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.SHARK_TOOTH, 1)
+                .pattern("SS")
+                .pattern("SS")
                 .input('S',ModItems.BLUBBER)
-                .criterion(hasItem(Items.STONE), conditionsFromItem(Items.STONE))
                 .criterion(hasItem(ModItems.BLUBBER), conditionsFromItem(ModItems.BLUBBER))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.SHARKTOOTH)));
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.BLUBBER_BLOCK)));
     }
 }

@@ -6,6 +6,7 @@
 
 
   "block.sunkenworlds.cat_block": "Deep Sea Creature",
+  "block.sunkenworlds.blubber_block": "Blubber Block",
 
-  "itemgroup.fish": "Sunken Worlds"
+  "itemgroup.sunken_worlds": "Sunken Worlds"
 }

@@ -1,11 +1,12 @@
 {
 	"schemaVersion": 1,
-	"id": "sunkenworlds",
+	"id": "sunken_worlds",
 	"version": "${version}",
 	"name": "Sunken Worlds",
 	"description": "Gup, Geep, Gip.",
 	"authors": [
-		"Epicsaurus"
+		"Epicsaurus",
+		"g-uh"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",

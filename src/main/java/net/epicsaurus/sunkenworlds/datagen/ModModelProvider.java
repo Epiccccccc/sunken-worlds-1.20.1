@@ -20,9 +20,9 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-        itemModelGenerator.register(ModItems.SHARKTOOTH, Models.GENERATED);
-        itemModelGenerator.register(ModItems.BLUBBER, Models.GENERATED);
 
-        itemModelGenerator.register(ModItems.RAWSHARKMEAT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SHARK_TOOTH, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BLUBBER, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RAW_SHARK_MEAT, Models.GENERATED);
     }
 }

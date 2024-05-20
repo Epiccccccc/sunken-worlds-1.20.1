@@ -11,20 +11,21 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 public class ModItemGroups {
-    public static final ItemGroup FISH_GROUP = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(SunkenWorlds.MOD_ID, "fish"),
-            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.fish"))
-                    .icon(() -> new ItemStack(ModItems.SHARKTOOTH)).entries((displayContext, entries) -> {
+    public static final ItemGroup SUNKEN_WORLDS = Registry.register(Registries.ITEM_GROUP,
+            new Identifier(SunkenWorlds.MOD_ID, "sunken_worlds"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.sunken_worlds"))
+                    .icon(() -> new ItemStack(ModItems.SHARK_TOOTH)).entries((displayContext, entries) -> {
                     entries.add(ModItems.BLUBBER);
-                    entries.add(ModItems.SHARKTOOTH);
+                    entries.add(ModItems.SHARK_TOOTH);
 
-                    entries.add(ModItems.RAWSHARKMEAT);
+                    entries.add(ModItems.RAW_SHARK_MEAT);
 
                     entries.add(ModBlocks.CAT_BLOCK);
+                    entries.add(ModBlocks.BLUBBER_BLOCK );
 
                     }).build());
 
-    public static void registeritemgroups() {
+    public static void registerItemGroups() {
         SunkenWorlds.LOGGER.info("Registering Item Groups For " +SunkenWorlds.MOD_ID);
     }
 }

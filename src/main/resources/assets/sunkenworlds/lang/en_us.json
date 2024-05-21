@@ -1,12 +1,10 @@
 {
-  "item.sunkenworlds.shark_tooth": "Shark Tooth",
   "item.sunkenworlds.blubber": "Blubber",
+  "item.sunkenworlds.shark_tooth": "Shark Tooth",
 
   "item.sunkenworlds.raw_shark_meat": "Raw Shark Meat",
+  "item.sunkenworlds.blubber_block": "Blubber Block",
 
-
-  "block.sunkenworlds.cat_block": "Deep Sea Creature",
-  "block.sunkenworlds.blubber_block": "Blubber Block",
 
   "itemgroup.sunken_worlds": "Sunken Worlds"
 }

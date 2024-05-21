@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "sunken_worlds:item/blubber"
+    "layer0": "sunkenworlds:item/blubber"
   }
 }

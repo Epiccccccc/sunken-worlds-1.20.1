@@ -8,12 +8,10 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
-    public static final Item SHARK_TOOTH = registerItem("shark_tooth",
-            new Item(new FabricItemSettings()));
-    public static final Item BLUBBER = registerItem("blubber",
-            new Item(new FabricItemSettings()));
+    public static final Item SHARK_TOOTH = registerItem("shark_tooth", new Item(new FabricItemSettings()));
+    public static final Item BLUBBER = registerItem("blubber", new Item(new FabricItemSettings()));
     public static final Item RAW_SHARK_MEAT = registerItem("raw_shark_meat",
-            new Item(new FabricItemSettings().food(ModFoodComponents.RAWSHARKMEAT)));
+            new Item(new FabricItemSettings().food(ModFoodComponents.RAW_SHARK_MEAT)));
 
 
     private static Item registerItem(String name, Item item) {

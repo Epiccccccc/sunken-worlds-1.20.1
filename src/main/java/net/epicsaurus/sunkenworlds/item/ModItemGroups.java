@@ -19,6 +19,7 @@ public class ModItemGroups {
                     entries.add(ModItems.SHARK_TOOTH);
 
                     entries.add(ModItems.RAW_SHARK_MEAT);
+                    entries.add(ModItems.COOKED_SHARK_MEAT);
 
                     entries.add(ModBlocks.CAT_BLOCK);
                     entries.add(ModBlocks.BLUBBER_BLOCK );

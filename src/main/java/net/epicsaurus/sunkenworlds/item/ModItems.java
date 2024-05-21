@@ -12,6 +12,8 @@ public class ModItems {
     public static final Item BLUBBER = registerItem("blubber", new Item(new FabricItemSettings()));
     public static final Item RAW_SHARK_MEAT = registerItem("raw_shark_meat",
             new Item(new FabricItemSettings().food(ModFoodComponents.RAW_SHARK_MEAT)));
+    public static final Item COOKED_SHARK_MEAT = registerItem("cooked_shark_meat",
+            new Item(new FabricItemSettings().food(ModFoodComponents.COOKED_SHARK_MEAT)));
 
 
     private static Item registerItem(String name, Item item) {

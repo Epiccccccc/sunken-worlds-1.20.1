@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "sunken_worlds:blubber_block"
+          "name": "sunken_worlds:blubber"
         }
       ],
       "rolls": 1.0

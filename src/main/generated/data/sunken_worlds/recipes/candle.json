@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "sunken_worlds:blubber"
+    },
+    "S": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    "S",
+    "B"
+  ],
+  "result": {
+    "item": "minecraft:candle"
+  },
+  "show_notification": true
+}

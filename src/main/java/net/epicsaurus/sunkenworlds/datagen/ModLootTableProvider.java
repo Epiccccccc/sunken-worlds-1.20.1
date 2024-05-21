@@ -12,5 +12,6 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     @Override
     public void generate() {
         addDrop(ModBlocks.CAT_BLOCK);
+        addDrop(ModBlocks.BLUBBER_BLOCK);
     }
 }

@@ -30,7 +30,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.BLUBBER, RecipeCategory.DECORATIONS,
                 ModBlocks.CAT_BLOCK);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.SHARK_TOOTH, 1)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModItems.BLUBBER, 1)
                 .pattern("SS")
                 .pattern("SS")
                 .input('S',ModItems.BLUBBER)

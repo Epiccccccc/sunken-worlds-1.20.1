@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "sunkenworlds:item/raw_shark_meat"
+    "layer0": "sunken_worlds:item/raw_shark_meat"
   }
 }

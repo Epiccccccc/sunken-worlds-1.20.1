@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
+  "category": "building",
   "key": {
     "S": {
       "item": "sunken_worlds:blubber"
@@ -11,7 +11,7 @@
     "SS"
   ],
   "result": {
-    "item": "sunken_worlds:shark_tooth"
+    "item": "sunken_worlds:blubber"
   },
   "show_notification": true
 }

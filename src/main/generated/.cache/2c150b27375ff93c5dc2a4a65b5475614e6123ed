@@ -1,7 +1,0 @@
-// 1.20.1	2024-05-21T21:48:25.537228	Sunken Worlds/Tags for minecraft:block
-8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\minecraft\tags\blocks\needs_diamond_tool.json
-c13d34cfed08fb407eb878cb277b3f651775ce35 data\minecraft\tags\blocks\mineable\axe.json
-c13d34cfed08fb407eb878cb277b3f651775ce35 data\minecraft\tags\blocks\mineable\hoe.json
-8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\minecraft\tags\blocks\needs_stone_tool.json
-c13d34cfed08fb407eb878cb277b3f651775ce35 data\minecraft\tags\blocks\mineable\pickaxe.json
-c13d34cfed08fb407eb878cb277b3f651775ce35 data\minecraft\tags\blocks\mineable\shovel.json

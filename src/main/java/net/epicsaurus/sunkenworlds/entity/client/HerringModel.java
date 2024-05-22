@@ -42,11 +42,10 @@ public class HerringModel<T extends HerringEntity> extends SinglePartEntityModel
 	public void render(MatrixStack matrices, VertexConsumer vertexConsumer, int light, int overlay, float red, float green, float blue, float alpha) {
 		Herring.render(matrices, vertexConsumer, light, overlay, red, green, blue, alpha);
 
-		this.animateMovement(ModAnimations.HERRING_SWIM);
+
 	}
 
-	private void animateMovement(Animation herringSwim) {
-	}
+
 
 	@Override
 	public ModelPart getPart() {

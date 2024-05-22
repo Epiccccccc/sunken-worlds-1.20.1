@@ -26,5 +26,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.BLUBBER, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_SHARK_MEAT, Models.GENERATED);
         itemModelGenerator.register(ModItems.COOKED_SHARK_MEAT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.HERRING_BUCKET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.STINK_BOTTLE, Models.GENERATED);
     }
 }

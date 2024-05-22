@@ -10,9 +10,12 @@ import net.minecraft.block.CandleBlock;
 import net.minecraft.client.input.Input;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
+import net.minecraft.enchantment.LuckEnchantment;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.item.MinecartItem;
+import net.minecraft.recipe.AbstractCookingRecipe;
+import net.minecraft.recipe.RecipeSerializer;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.util.Identifier;
 
@@ -28,8 +31,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
     @Override
     public void generate(Consumer<RecipeJsonProvider> exporter) {
-        offerSmelting(exporter, SHARK_COOKABLE, RecipeCategory.FOOD, ModItems.COOKED_SHARK_MEAT,
-                0.7f, 200, "Meat");
+        RecipeSerializer<? extends AbstractCookingRecipe> RecipeSerializer = null;
+        offerFoodCookingRecipe(exporter, "furnace", RecipeSerializer, 200, ModItems.RAW_SHARK_MEAT, ModItems.COOKED_SHARK_MEAT, 0.35F);
+        offerFoodCookingRecipe(exporter, "smoker", RecipeSerializer, 200, ModItems.RAW_SHARK_MEAT, ModItems.COOKED_SHARK_MEAT, 0.35F);
 
 
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.BLUBBER, RecipeCategory.DECORATIONS,

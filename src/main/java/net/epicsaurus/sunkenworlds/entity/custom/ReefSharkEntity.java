@@ -2,6 +2,8 @@ package net.epicsaurus.sunkenworlds.entity.custom;
 
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.goal.*;
+import net.minecraft.entity.ai.pathing.EntityNavigation;
+import net.minecraft.entity.ai.pathing.SwimNavigation;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.mob.MobEntity;
@@ -17,10 +19,10 @@ public class ReefSharkEntity extends WaterCreatureEntity {
 
     @Override
     protected void initGoals() {
-        this.goalSelector.add(0, new SwimGoal(this));
+        this.goalSelector.add(0, new MoveIntoWaterGoal(this));
         this.goalSelector.add(1, new EscapeDangerGoal(this, 1.25));
         this.goalSelector.add(2, new FleeEntityGoal<PlayerEntity>(this, PlayerEntity.class, 8.0f, 1.6, 1.4, EntityPredicates.EXCEPT_SPECTATOR::test));
-        this.goalSelector.add(4, new SwimToRandomPlaceGoal(this));
+        this.goalSelector.add(2, new SwimAroundGoal(this, 1.0, 10));
     }
 
     public static DefaultAttributeContainer.Builder createReefSharkAttributes() {
@@ -30,13 +32,8 @@ public class ReefSharkEntity extends WaterCreatureEntity {
                 .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 2);
     }
 
-    private class SwimToRandomPlaceGoal extends Goal {
-        public SwimToRandomPlaceGoal(ReefSharkEntity reefSharkEntity) {
-        }
-
-        @Override
-        public boolean canStart() {
-            return false;
-        }
+    protected EntityNavigation createNavigation(World world) {
+        return new SwimNavigation(this, world);
     }
+
 }

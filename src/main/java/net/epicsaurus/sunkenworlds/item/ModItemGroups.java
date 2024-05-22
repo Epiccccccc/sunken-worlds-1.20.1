@@ -17,6 +17,8 @@ public class ModItemGroups {
                     .icon(() -> new ItemStack(ModItems.SHARK_TOOTH)).entries((displayContext, entries) -> {
                     entries.add(ModItems.BLUBBER);
                     entries.add(ModItems.SHARK_TOOTH);
+                    entries.add(ModItems.HERRING_BUCKET);
+                    entries.add(ModItems.STINK_BOTTLE);
 
                     entries.add(ModItems.RAW_SHARK_MEAT);
                     entries.add(ModItems.COOKED_SHARK_MEAT);

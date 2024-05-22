@@ -1,8 +1,8 @@
 {
 	"schemaVersion": 1,
-	"id": "sunken_worlds",
+	"id": "unusual_critters",
 	"version": "${version}",
-	"name": "Sunken Worlds",
+	"name": "Unusual Critters",
 	"description": "Gup, Geep, Gip.",
 	"authors": [
 		"Epicsaurus",
@@ -17,17 +17,17 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"net.epicsaurus.sunkenworlds.SunkenWorlds"
+			"net.epicsaurus.unusualcritters.UnusualCritters"
 		],
 		"client": [
-			"net.epicsaurus.sunkenworlds.SunkenWorldsClient"
+			"net.epicsaurus.unusualcritters.UnusualCrittersClient"
 		],
 		"fabric-datagen": [
-			"net.epicsaurus.sunkenworlds.SunkenWorldsDataGenerator"
+			"net.epicsaurus.unusualcritters.UnusualCrittersDataGenerator"
 		]
 	},
 	"mixins": [
-		"sunken_worlds.mixins.json"
+		"unusual_critters.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.15.11",

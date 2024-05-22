@@ -1,0 +1,14 @@
+{
+  "item.unusual_critters.blubber": "Blubber",
+  "item.unusual_critters.shark_tooth": "Shark Tooth",
+  "item.unusual_critters.herring_bucker": "Herring Bucket",
+
+  "item.unusual_critters.raw_shark_meat": "Raw Shark Meat",
+  "item.unusual_critters.cooked_shark_meat": "Cooked Shark Meat",
+
+  "block.unusual_critters.blubber_block": "Blubber Block",
+  "block.unusual_critters.cat_block": "Cat Cube",
+
+
+  "itemgroup.unusual_critters": "Unusual Critter"
+}

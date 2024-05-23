@@ -20,8 +20,8 @@ public class ModItemGroups {
                     entries.add(ModItems.HERRING_BUCKET);
                     entries.add(ModItems.STINK_BOTTLE);
 
-                    entries.add(ModItems.RAW_SHARK_MEAT);
-                    entries.add(ModItems.COOKED_SHARK_MEAT);
+                    entries.add(ModItems.RAW_HERRING_MEAT);
+                    entries.add(ModItems.COOKED_HERRING_MEAT);
 
                     entries.add(ModBlocks.CAT_BLOCK);
                     entries.add(ModBlocks.BLUBBER_BLOCK );

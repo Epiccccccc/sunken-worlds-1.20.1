@@ -4,14 +4,18 @@ import net.epicsaurus.unusualcritters.block.ModBlocks;
 import net.epicsaurus.unusualcritters.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
+import net.minecraft.data.server.recipe.CookingRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.AbstractCookingRecipe;
+import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.RecipeSerializer;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.util.Identifier;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 import java.util.function.Consumer;
@@ -26,13 +30,14 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     public void generate(Consumer<RecipeJsonProvider> exporter) {
 
 
+
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.BLUBBER, RecipeCategory.DECORATIONS,
                 ModBlocks.CAT_BLOCK);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModItems.BLUBBER, 1)
                 .pattern("SS")
                 .pattern("SS")
-                .input('S',ModItems.BLUBBER)
+                .input('S', ModItems.BLUBBER)
                 .criterion(hasItem(ModItems.BLUBBER), conditionsFromItem(ModItems.BLUBBER))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.BLUBBER_BLOCK)));
 
@@ -45,3 +50,4 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(Items.CANDLE)));
     }
 }
+

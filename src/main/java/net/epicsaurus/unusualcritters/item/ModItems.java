@@ -14,10 +14,10 @@ import net.minecraft.util.Identifier;
 public class ModItems {
     public static final Item SHARK_TOOTH = registerItem("shark_tooth", new Item(new FabricItemSettings()));
     public static final Item BLUBBER = registerItem("blubber", new Item(new FabricItemSettings()));
-    public static final Item RAW_SHARK_MEAT = registerItem("raw_shark_meat",
-            new Item(new FabricItemSettings().food(ModFoodComponents.RAW_SHARK_MEAT)));
-    public static final Item COOKED_SHARK_MEAT = registerItem("cooked_shark_meat",
-            new Item(new FabricItemSettings().food(ModFoodComponents.COOKED_SHARK_MEAT)));
+    public static final Item RAW_HERRING_MEAT = registerItem("raw_herring_meat",
+            new Item(new FabricItemSettings().food(ModFoodComponents.RAW_HERRING_MEAT)));
+    public static final Item COOKED_HERRING_MEAT = registerItem("cooked_herring_meat",
+            new Item(new FabricItemSettings().food(ModFoodComponents.COOKED_HERRING_MEAT)));
     public static final Item HERRING_BUCKET = registerItem("herring_bucket",
             new EntityBucketItem(ModEntities.HERRING, Fluids.WATER, SoundEvents.ITEM_BUCKET_EMPTY_FISH, (new Item.Settings()).maxCount(1)));
     public static final Item STINK_BOTTLE = registerItem("stink_bottle", new Item(new FabricItemSettings()));
